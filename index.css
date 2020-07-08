@@ -1,0 +1,13 @@
+h1, h2 {
+    color: green;
+    text-align: center;
+    margin: 1rem
+}
+
+body {
+    background-color: rgba(205, 247, 170, 0.747);
+}
+
+button {
+   align-content: space-between;
+}
