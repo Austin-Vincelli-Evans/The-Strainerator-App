@@ -1,0 +1,152 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end meyer reset */
+
+
+@font-face {
+    font-family: smokeFont;
+    src: url(HOLY_SMOKE.ttf);
+}
+
+@font-face {
+    font-family: smokeFontTheSecond;
+    src: url(AlphaSmoke.TTF);
+}
+@font-face{
+    font-family: bigsmoke;
+    src: url(BigSmoke.ttf);
+}
+@font-face{
+    font-family: poster;
+    src: url(DayPosterShadowNF.ttf);
+}
+
+nav {
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    margin: 12px;
+    font-family: bigsmoke;
+    border: black;
+    padding: .1em;
+    text-shadow: 1px 1px black;
+    
+}
+
+html, body{
+    min-height: 100%;
+}
+
+html {
+    background-image: 
+        linear-gradient(rgba(36, 192, 4, 0.6), hsl(240, 50%, 5%)),
+        url("weed.jpg");
+    text-align: center;
+
+}
+
+.myButton {
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	background-color:#77b55a;
+	border-radius:16px;
+	border:5px solid #4b8f29;
+    display:flex;
+    display: grid;
+    position: relative;
+    margin: auto;
+    margin-bottom: 22px;
+    align-items: center;
+	cursor: pointer;
+	color:#ffffff;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size:25px;
+	font-weight:bold;
+	padding:19px 29px;
+	text-decoration:none;
+    text-shadow:2px 2px black;
+    
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	background-color:#72b352;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton3 {
+	box-shadow:inset 1px 1px 14px -50px #a6827e;
+	background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+	background-color:#7d5d3b;
+	border-radius:9px;
+	border:3px solid #54381e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size:12px;
+	padding:4px 1px;
+	text-decoration:none;
+    text-shadow:0px 4px 26px #4d3534;
+    margin-top: 5px;
+}
+.myButton3:hover {
+	background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+	background-color:#634b30;
+}
+.myButton3:active {
+	position:relative;
+	top:1px;
+}
+
+li{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
