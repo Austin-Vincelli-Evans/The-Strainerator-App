@@ -7,11 +7,13 @@ const starterList = document.getElementById('starter-list')
 const flavorList = document.getElementById('flavor-list')
 const finaleList = document.getElementById('finale-list')
 const generateButton = document.getElementById('generate')
+const clearButton = document.getElementById('clear-button')
 let starterWord = ""
 let flavorWord = ""
 let finaleWord = ""
 
 generateButton.addEventListener('click', fetchCalls)
+
 
 function fetchCalls(){
     fetch(starterURL)
@@ -24,6 +26,9 @@ function fetchCalls(){
         .then(response => response.json())
         .then(result => handleFinale(result))
 }
+
+
+
 
 function handleStarter(starter){
     starterWord = starter[Math.floor(Math.random() * starter.length)].name
@@ -57,4 +62,9 @@ function renderFinale(word){
     const finaleWord = document.createElement('li')
     finaleWord.innerText = word
     finaleList.append(finaleWord)
+}
+function clearStrain(event){
+    starterList.remove(starterWord)
+    flavorList.remove(flavorWord)
+    finaleList.remove(finaleWord)
 }
