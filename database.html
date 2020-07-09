@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="database.css">
+    <title>The Strainerator</title>
+</head>
+<body>
+    <header><nav class='sticky'><h1>THE STRAIN-ERATOR-DB</h1></nav></header>
+    <div><h4>The database consits of three types.</h4>
+    <br>The STARTER<br> The FLAVOR & <br> The FINALE <br><br>For the full list.</div> <button class="myButton3">Click here.</button><br><br>
+    
+    <p id='paragraph'>Thanks for adding to our database! We ask for serious additions only!
+         We currently have over 16,000 combinations and grow every day with additions like yours!</p>
+    <br><form method='POST' action="http://localhost:3000/starters" id="starter-form">
+        <p id="starter-header" style="color:red; font-weight: bolder;">The Starter</p>
+        <input type="text" name="starter" placeholder="ex. Super / Colorado">
+        <input type="submit">
+    </form>
+    <br><form method='POST' action="http://localhost:3000/flavors" id="flavor-form">
+        <p id="flavor-header" style="color:rgba(247, 247, 2, 0.918); font-weight: bolder">The Flavor</p>
+        <input type="text" name="flavor" placeholder="ex. Berry / Honey">
+        <input type="submit">
+    </form>
+    <br><form method='POST' action="http://localhost:3000/finales" id="finale-form">
+        <p id="finale-header" style="color:green; font-weight: bolder">The Finale</p>
+        <input type="text" name="finale" placeholder="ex. Chronic / Kush">
+        <input type="submit">
+    </form>
+    <footer id="thanks-starter" style="color:red"></footer>
+    <footer id="thanks-flavor" style="color:yellow"></footer>
+    <footer id="thanks-finale" style="color:green"></footer>
+    <footer><button class="myButton3" onclick="window.location.href='/index.html'">Home</button></footer>
+</body>
+<script src="database.js"></script>
+</html>
