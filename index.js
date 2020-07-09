@@ -2,52 +2,59 @@ const starterURL = `http://localhost:3000/starters`
 const flavorURL = `http://localhost:3000/flavors`
 const finaleURL = `http://localhost:3000/finales`
 
-document.getElementById('generate').addEventListener('click', renderStarter)
 
 const starterList = document.getElementById('starter-list')
 const flavorList = document.getElementById('flavor-list')
 const finaleList = document.getElementById('finale-list')
+const generateButton = document.getElementById('generate')
+let starterWord = ""
+let flavorWord = ""
+let finaleWord = ""
 
-fetch(starterURL)
-    .then(response => response.json())
-    .then(result => handleStarter(result))
-fetch(flavorURL)
-    .then(response => response.json())
-    .then(result => handleFlavor(result))
-fetch(finaleURL)
-    .then(response => response.json())
-    .then(result => handleFinale(result))
+generateButton.addEventListener('click', fetchCalls)
+
+function fetchCalls(){
+    fetch(starterURL)
+        .then(response => response.json())
+        .then(result => handleStarter(result))
+    fetch(flavorURL)
+        .then(response => response.json())
+        .then(result => handleFlavor(result))
+    fetch(finaleURL)
+        .then(response => response.json())
+        .then(result => handleFinale(result))
+}
 
 function handleStarter(starter){
-    return starter.forEach(starter => renderStarter(starter.name, starter.id))
+    starterWord = starter[Math.floor(Math.random() * starter.length)].name
+    renderStarter(starterWord)
 }
 
-function renderStarter(starter, id){
-    console.log(starter, id)
+function renderStarter(word){
     const starterWord = document.createElement('li')
-    starterWord.innerText = starter
-    // starterList.append(starterWord)
+    starterWord.innerText = word
+    starterList.append(starterWord)
 }
+
 
 function handleFlavor(flavor){
-    return flavor.forEach(flavor => renderFlavor(flavor.name, flavor.id))
+    flavorWord = flavor[Math.floor(Math.random() * flavor.length)].name
+    renderFlavor(flavorWord)
 }
 
-function renderFlavor(flavor, id){
-    console.log(flavor, id)
+function renderFlavor(word){
     const flavorWord = document.createElement('li')
-    flavorWord.innerText = flavor
-    // flavorList.append(flavorWord)
+    flavorWord.innerText = word
+    flavorList.append(flavorWord)
 }
 
 function handleFinale(finale){
-    return finale.forEach(finale => renderFinale(finale.name, finale.id))
+    finaleWord = finale[Math.floor(Math.random() * finale.length)].name
+    renderFinale(finaleWord)
 }
 
-function renderFinale(finale, id){
-    console.log(finale, id)
+function renderFinale(word){
     const finaleWord = document.createElement('li')
-    finaleWord.innerText = finale
-    // finaleList.append(finaleWord)
+    finaleWord.innerText = word
+    finaleList.append(finaleWord)
 }
-

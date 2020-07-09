@@ -1,13 +1,36 @@
-h1, h2 {
-    color: green;
+/* @font-face {
+    font-family: smokeFont;
+    src: url(HOLY_SMOKE.ttf);
+} */
+
+
+h1 {
+    font-size: xx-large;
+    color: black;
+    font-weight: bolder;
     text-align: center;
-    margin: 1rem
+    margin: 1rem;
+    font-family: smokeFont;
+}
+
+
+h2 {
+    color: black;
+    text-align: center;
+    margin: 1rem;
+    font-family: smokeFont;
 }
 
 body {
-    background-color: rgba(205, 247, 170, 0.747);
+    background-image: url("weed.jpg");
 }
 
-button {
-   align-content: space-between;
+
+#generate {
+   color: black;
+}
+
+li {
+    color: white;
+    font-weight: bolder;
 }
