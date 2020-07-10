@@ -63,33 +63,34 @@ table {
 }
 
 nav {
-    font-size: 50px;
+    font-size: 80px;
     color: white;
     font-weight: bolder;
     text-align: center;
     margin: 10px;
+    margin-bottom: 20px;
     font-family: bigsmoke;
     border: black;
     padding: .1em;
     text-shadow: 1px 1px black;
+    /* text-decoration: underline; */
     
-}
-
-
-html, body{
-    min-height: 100%;
 }
 h2 {
     color: white;
     font-size: 25px;
     text-align: center;
-    margin-bottom: 1px;
+    margin: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     /* font-family: bigsmoke; */
     /* background-color: #77b55a; */
     border-radius: 10%;
-    padding: .3em;
+    padding: 10px;
     text-shadow: 2px 2px black;
+}
+
+html, body{
+    min-height: 100%;
 }
 
 html {
@@ -100,16 +101,6 @@ html {
 
 }
 
-li{
-    list-style-type: none;
-    display: flex;
-    align-content: center;
-    font-size: xx-large;
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px black;
-}
 
 .myButton {
 	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
@@ -120,7 +111,8 @@ li{
     display: grid;
     position: relative;
     margin: auto;
-    margin-bottom: 22px;
+    margin-top: 45px;
+    margin-bottom: 20px;
     align-items: center;
 	cursor: pointer;
 	color:#ffffff;
@@ -139,60 +131,4 @@ li{
 .myButton:active {
 	position:relative;
 	top:1px;
-}
- 
-.myButton2 {
-	box-shadow:inset 1px 1px 14px -50px #a6827e;
-	background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
-	background-color:#7d5d3b;
-	border-radius:9px;
-	border:3px solid #54381e;
-    display:inline-block;
-    margin-bottom: 22px;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size:21px;
-	padding:13px 13px;
-	text-decoration:none;
-	text-shadow:2px 2px black;
-}
-.myButton2:hover {
-	background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
-	background-color:#634b30;
-}
-.myButton2:active {
-	position:relative;
-	top:1px;
-}
-
-.myButton3 {
-	box-shadow:inset 0px 0px 0px 0px #cf866c;
-	background:linear-gradient(to bottom, #d0451b 5%, #f51e1e 100%);
-	background-color:#d0451b;
-	border-radius:10px;
-	border:2px solid #942911;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size:18px;
-	padding:15px 36px;
-	text-decoration:none;
-	text-shadow:2px 2px black;
-}
-.myButton3:hover {
-	background:linear-gradient(to bottom, #f51e1e 5%, #d0451b 100%);
-	background-color:#f51e1e;
-}
-.myButton3:active {
-	position:relative;
-	top:1px;
-}
-
-
-li {
-    color: white;
-    font-weight: bolder;
-    font-family: bigsmoke;
 }
