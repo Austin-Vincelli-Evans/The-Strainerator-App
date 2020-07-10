@@ -150,3 +150,14 @@ li{
     margin-bottom: 8px;
 }
 
+#starters{
+	color: red;
+}
+
+#flavors{
+	color: yellow;
+}
+
+#finales{
+	color: green;
+}

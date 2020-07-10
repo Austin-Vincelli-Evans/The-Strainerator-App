@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="enterPage.css">
+    <link rel="stylesheet" href="enterpage.css">
     <title>The Strainerator</title>
 </head>
 <body>
     <header><nav class='sticky'><h1>THE STRAIN-ERATOR</h1></nav></header>
-    <h2>16,000 combinations and counting!</h2><br>
-    <button id="enter-button" class="myButton">Enter Here</button>
-<script src="enterPage.js"></script>
+    <h2>Generate random, never invented names for YOUR strain of weed!</h2><h2>Just use these buttons!</h2><br>
+    <h3 id='strain-name'></h3>
+    <button type="button" class="myButton" id='generate'>Generate!</button>
+    <ul id='starter-list'></ul>
+    <ul id='flavor-list'></ul>
+    <ul id='finale-list'></ul>
+    <button onClick="window.location.reload();" id='clear-button' class="myButton2">Clear</button>
+    <footer>
+       <button class="myButton3" onclick="window.location.href='/database.html'">Add to the Database!</button>
+    </footer>
+
 </body>
+<script src="enterpage.js"></script>
 </html>
