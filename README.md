@@ -30,3 +30,7 @@ On the same page is a link to the full list of database entries where users can 
 After adding to the database play with the Generate button some more and see your entry added!
 
 My name is Austin Evans I am a student at Flatiron Schoool for Software Engineering and this is my mod three project I developed in three days with vanilla Javascript and Ruby on Rails. 
+
+Here is a youtube link to watch a demo https://youtu.be/tBHI7SCLFTE
+
+Thanks for viewing!
