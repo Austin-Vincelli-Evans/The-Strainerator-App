@@ -13,6 +13,7 @@ let flavorWord = ""
 let finaleWord = ""
 
 generateButton.addEventListener('click', fetchCalls)
+clearButton.addEventListener('click', clearStrain)
 
 
 function fetchCalls(){
@@ -29,18 +30,17 @@ function fetchCalls(){
 
 
 
-
 function handleStarter(starter){
     starterWord = starter[Math.floor(Math.random() * starter.length)].name
     renderStarter(starterWord)
 }
+
 
 function renderStarter(word){
     const starterWord = document.createElement('li')
     starterWord.innerText = word
     starterList.append(starterWord)
 }
-
 
 function handleFlavor(flavor){
     flavorWord = flavor[Math.floor(Math.random() * flavor.length)].name
@@ -63,8 +63,21 @@ function renderFinale(word){
     finaleWord.innerText = word
     finaleList.append(finaleWord)
 }
+
 function clearStrain(event){
-    starterList.remove(starterWord)
-    flavorList.remove(flavorWord)
-    finaleList.remove(finaleWord)
+    
+    window.location.reload()
+//     starterList.remove(starterWord)
+//     flavorList.remove(flavorWord)
+//     finaleList.remove(finaleWord)
+}
+
+function firstGeneration(){
+    if(starterWord.innerText !== null){
+        starterList.remove(starterWord)
+        flavorList.remove(flavorWord)
+        finaleList.remove(finaleWord), fetchCalls()
+    }
+    else{
+        fetchCalls()}
 }
