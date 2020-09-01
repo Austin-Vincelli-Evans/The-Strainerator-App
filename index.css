@@ -46,20 +46,20 @@ table {
 
 @font-face {
     font-family: smokeFont;
-    src: url(HOLY_SMOKE.ttf);
+    src: url(fonts/HOLY_SMOKE.ttf);
 }
 
 @font-face {
     font-family: smokeFontTheSecond;
-    src: url(AlphaSmoke.TTF);
+    src: url(fonts/AlphaSmoke.TTF);
 }
 @font-face{
     font-family: bigsmoke;
-    src: url(BigSmoke.ttf);
+    src: url(fonts/BigSmoke.ttf);
 }
 @font-face{
     font-family: poster;
-    src: url(DayPosterShadowNF.ttf);
+    src: url(fonts/DayPosterShadowNF.ttf);
 }
 
 nav {
@@ -96,7 +96,7 @@ html, body{
 html {
     background-image: 
         linear-gradient(rgba(36, 192, 4, 0.6), hsl(240, 50%, 5%)),
-        url("weed.jpg");
+        url("images/weed.jpg");
     text-align: center;
 
 }
